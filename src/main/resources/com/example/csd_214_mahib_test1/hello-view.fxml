@@ -9,3 +9,18 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+<VBox alignment="CENTER" prefHeight="442.0" prefWidth="559.0" spacing="20.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csd_214_mahib_test1.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Pane prefHeight="422.0" prefWidth="519.0">
+        <children>
+            <Label fx:id="welcomeText" layoutX="183.0" layoutY="103.0" text="Login Page">
+                <font>
+                    <Font size="34.0" />
+                </font>
+            </Label>
+            <Label layoutX="122.0" layoutY="167.0" text="Username" />
+            <TextField fx:id="username" layoutX="185.0" layoutY="163.0" prefHeight="25.0" prefWidth="217.0" promptText="username" />
+            <Label layoutX="125.0" layoutY="203.0" text="Password" />
+            <PasswordField fx:id="password" layoutX="185.0" layoutY="199.0" prefHeight="25.0" prefWidth="217.0" promptText="password" />
