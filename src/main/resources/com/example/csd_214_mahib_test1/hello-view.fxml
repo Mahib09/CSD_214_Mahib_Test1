@@ -24,3 +24,8 @@
             <TextField fx:id="username" layoutX="185.0" layoutY="163.0" prefHeight="25.0" prefWidth="217.0" promptText="username" />
             <Label layoutX="125.0" layoutY="203.0" text="Password" />
             <PasswordField fx:id="password" layoutX="185.0" layoutY="199.0" prefHeight="25.0" prefWidth="217.0" promptText="password" />
+            <Button fx:id="loginbtn" layoutX="185.0" layoutY="245.0" onAction="#onloginbtnClick" prefHeight="25.0" prefWidth="81.0" text="Log in" />
+            <Label fx:id="message" layoutX="11.0" layoutY="283.0" prefHeight="17.0" prefWidth="494.0" textAlignment="CENTER" textFill="RED" />
+        </children>
+    </Pane>
+</VBox>
