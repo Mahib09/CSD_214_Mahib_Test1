@@ -21,8 +21,11 @@ public class HelloController {
         String username=this.username.getText();
         String password=this.password.getText();
         if(!username.isEmpty() && !password.isEmpty()){
-            if (username.equals(CORRECT_USERNAME) && password.equals(CORRECT_PASSWORD)) {
+            if (counter >= 5) {
+                message.setText("Sorry, Your Account is Locked!!!");
+            }else if (username.equals(CORRECT_USERNAME) && password.equals(CORRECT_PASSWORD)) {
                 message.setText("Success!!!");
+                counter=0;
             } else {
                 counter++;
                 if (counter >= 5){
