@@ -20,7 +20,7 @@ public class HelloController {
     protected void onloginbtnClick() {
         String username=this.username.getText();
         String password=this.password.getText();
-        if(validateInput(username,password)){
+        if(!username.isEmpty() && !password.isEmpty()){
             if (username.equals(CORRECT_USERNAME) && password.equals(CORRECT_PASSWORD)) {
                 message.setText("Success!!!");
             } else {
@@ -36,9 +36,6 @@ public class HelloController {
         }
 
     };
-    private boolean validateInput(String username, String password) {
-        return !username.isEmpty() && !password.isEmpty();
-    }
 }
 
 
